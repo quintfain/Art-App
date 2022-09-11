@@ -14,6 +14,7 @@
 		D3EE7F6128C8D50F0064DD12 /* Art_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F6028C8D50F0064DD12 /* Art_AppTests.swift */; };
 		D3EE7F6B28C8D5100064DD12 /* Art_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F6A28C8D5100064DD12 /* Art_AppUITests.swift */; };
 		D3EE7F6D28C8D5100064DD12 /* Art_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F6C28C8D5100064DD12 /* Art_AppUITestsLaunchTests.swift */; };
+		D3EE7F7A28C91D7F0064DD12 /* AppHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F7928C91D7F0064DD12 /* AppHome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D3EE7F6628C8D5100064DD12 /* Art AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Art AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE7F6A28C8D5100064DD12 /* Art_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_AppUITests.swift; sourceTree = "<group>"; };
 		D3EE7F6C28C8D5100064DD12 /* Art_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D3EE7F7928C91D7F0064DD12 /* AppHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				D3EE7F4F28C8D5070064DD12 /* Art_AppApp.swift */,
 				D3EE7F5128C8D5080064DD12 /* ContentView.swift */,
+				D3EE7F7928C91D7F0064DD12 /* AppHome.swift */,
 				D3EE7F5328C8D50F0064DD12 /* Assets.xcassets */,
 				D3EE7F5528C8D50F0064DD12 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EE7F7A28C91D7F0064DD12 /* AppHome.swift in Sources */,
 				D3EE7F5228C8D5080064DD12 /* ContentView.swift in Sources */,
 				D3EE7F5028C8D5080064DD12 /* Art_AppApp.swift in Sources */,
 			);
