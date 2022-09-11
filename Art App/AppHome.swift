@@ -16,11 +16,23 @@ struct Drawing {
 struct AppHome: View {
     @State private var currentDrawing: Drawing = Drawing()
     @State private var drawings: [Drawing] = []
+    @State private var selectedColor: Color = .black
     var body: some View {
         VStack {
             HStack {
                 Spacer()
-                Text("Logout Button")
+                Button(action: {
+                    ContentView()
+                }, label: {
+                    Text("Logout")
+                            .padding()
+                            .foregroundColor(.black)
+                            .background(Color.green)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color.black, lineWidth: 2)
+                            )
+                }).cornerRadius(25)
             }
             Spacer()
             Canvas { context, size in
@@ -38,15 +50,18 @@ struct AppHome: View {
                     self.drawings.append(currentDrawing)
                 })
                 .onEnded({ value in
-                    self.currentDrawing = Drawing(points: [])
+                    self.currentDrawing = Drawing(points: [], color: selectedColor)
                     })
             )
                 
             Spacer()
             HStack {
-                Text("Erase Icon")
-                Spacer()
-                Text("Paint Icon")
+                Text("Erase Icon").padding()
+                Text("Slider?").padding()
+                ColorPickerView(selectedColor: $selectedColor)
+                    .onChange(of: selectedColor) { newColor in
+                        currentDrawing.color = newColor
+                    }
             }
         }
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D331F33A28CE433000DC4A9F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331F33928CE433000DC4A9F /* Constants.swift */; };
+		D331F33C28CE447800DC4A9F /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D331F33B28CE447800DC4A9F /* ColorPickerView.swift */; };
 		D3EE7F5028C8D5080064DD12 /* Art_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F4F28C8D5070064DD12 /* Art_AppApp.swift */; };
 		D3EE7F5228C8D5080064DD12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE7F5128C8D5080064DD12 /* ContentView.swift */; };
 		D3EE7F5428C8D50F0064DD12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EE7F5328C8D50F0064DD12 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D331F33928CE433000DC4A9F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D331F33B28CE447800DC4A9F /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		D3EE7F4C28C8D5070064DD12 /* Art App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE7F4F28C8D5070064DD12 /* Art_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art_AppApp.swift; sourceTree = "<group>"; };
 		D3EE7F5128C8D5080064DD12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				D3EE7F4F28C8D5070064DD12 /* Art_AppApp.swift */,
 				D3EE7F5128C8D5080064DD12 /* ContentView.swift */,
 				D3EE7F7928C91D7F0064DD12 /* AppHome.swift */,
+				D331F33B28CE447800DC4A9F /* ColorPickerView.swift */,
+				D331F33928CE433000DC4A9F /* Constants.swift */,
 				D3EE7F5328C8D50F0064DD12 /* Assets.xcassets */,
 				D3EE7F5528C8D50F0064DD12 /* Preview Content */,
 			);
@@ -263,6 +269,8 @@
 				D3EE7F7A28C91D7F0064DD12 /* AppHome.swift in Sources */,
 				D3EE7F5228C8D5080064DD12 /* ContentView.swift in Sources */,
 				D3EE7F5028C8D5080064DD12 /* Art_AppApp.swift in Sources */,
+				D331F33A28CE433000DC4A9F /* Constants.swift in Sources */,
+				D331F33C28CE447800DC4A9F /* ColorPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
