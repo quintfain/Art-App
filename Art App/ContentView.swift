@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+//import FirebaseDatabase
 
 struct ContentView: View {
     @State var signInSuccess = false
@@ -49,9 +51,11 @@ struct LoginFormView: View {
                     "Enter Username",
                     text:$userName).disableAutocorrection(true).border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(TextAlignment.center)
+                        .foregroundColor(Color.black)
                 Spacer()
             }
             Button(action: {
+                addUserName(UserName: self.userName)
                 greeting = "Welcome " + userName + "!"
                 signInSuccess = true
             }, label: {
@@ -64,6 +68,19 @@ struct LoginFormView: View {
                                 .stroke(Color.black, lineWidth: 2)
                         )
             }).cornerRadius(25)
-        }
+        }.background(Color.white)
     }
+    
+    func addUserName(UserName: String)
+    {
+        let dataBase = Firestore.firestore()
+        dataBase.collection("Customers").document().setData(["Username": userName])
+    }
+    
 }
+
+
+
+
+
+

@@ -23,7 +23,7 @@ struct AppHome: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    ContentView()
+                    //ContentView()
                 }, label: {
                     Text("Logout")
                             .padding()
@@ -76,7 +76,7 @@ struct AppHome: View {
             .background(.gray)
             .border(.black)
             
-        }
+        }.background(Color.white)
         
     }
 }
