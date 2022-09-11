@@ -17,6 +17,7 @@ struct AppHome: View {
     @State private var currentDrawing: Drawing = Drawing()
     @State private var drawings: [Drawing] = []
     @State private var selectedColor: Color = .black
+    @State private var thickness: Double = 0.0
     var body: some View {
         VStack {
             HStack {
@@ -50,20 +51,33 @@ struct AppHome: View {
                     self.drawings.append(currentDrawing)
                 })
                 .onEnded({ value in
-                    self.currentDrawing = Drawing(points: [], color: selectedColor)
+                    self.currentDrawing = Drawing(points: [], color: selectedColor, lineWidth: thickness)
                     })
             )
                 
-            Spacer()
             HStack {
-                Text("Erase Icon").padding()
-                Text("Slider?").padding()
+                Image("eraser-icon").resizable().frame(width: 50.0, height: 50.0).scaledToFit().onTapGesture {
+                    selectedColor = Color.white
+                    currentDrawing.color = Color.white
+                }
+                
+                Slider(value: $thickness, in: 2...20) {
+                    
+                }.onChange(of: thickness){ newThickness in
+                    currentDrawing.lineWidth = newThickness
+                }
+                
                 ColorPickerView(selectedColor: $selectedColor)
                     .onChange(of: selectedColor) { newColor in
                         currentDrawing.color = newColor
-                    }
+                    }.padding().border(.black)
             }
+            .foregroundColor(.black)
+            .background(.gray)
+            .border(.black)
+            
         }
+        
     }
 }
 
