@@ -5,6 +5,7 @@
 //  Created by Quint DeNiro Fain on 9/7/22.
 //
 
+// Nicolas Zacharis (9/11/22)
 import SwiftUI
 
 struct Drawing {
